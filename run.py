@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, session, redirect
 import pandas as pd
 import eda
 
-df = pd.read_csv('/home/neoml/Project9_ExcelR/static/df_Clean.csv')
+df = pd.read_csv('/home/neoml/Project9_ExcelR/static/data/df_Clean.csv')
 
 app = Flask(__name__)
 
