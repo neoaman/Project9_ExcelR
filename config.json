@@ -17,7 +17,7 @@
     "admin_user" : "aman@gmail.com",
     "admin_pass" : "password",
     "upload_location" : "D:\\STUDY PROCESS\\ExcelR Project\\Project9_ExcelR\\static\\data",
-    "upload_location2" : "D:\\STUDY PROCESS\\ExcelR Project\\Project9_ExcelR\\static\\data"
+    "upload_location2" : "/home/neoml/Project9_ExcelR/static/data"
   }
 
 }
