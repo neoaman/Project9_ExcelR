@@ -44,7 +44,7 @@ def eda():
 
     else:
         A = df.head()
-        msg = f'Showing the top 5 records of the data set'
+        msg = 'Showing the top 5 records of the data set'
     return render_template('eda.html',col = df.columns[1:],data = A,len=len(A),msg=msg)
 
 @app.route("/model")
