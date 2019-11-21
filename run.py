@@ -1,9 +1,9 @@
 # Importing the required Packages
 from flask import Flask, render_template, request, session, redirect
-from flask_sqlalchemy import SQLAlchemy
+#from flask_sqlalchemy import SQLAlchemy
 import os
 import json
-from flask_mail import Mail
+#from flask_mail import Mail
 import pandas as pd
 from werkzeug.utils import secure_filename
 import time
@@ -13,7 +13,7 @@ df = pd.read_csv('/home/neoml/Project9_ExcelR/static/data/df_Clean.csv')
 
 app = Flask(__name__)
 
-with open("config.json") as c:
+with open("/home/neoml/Project9_ExcelR/config.json") as c:
     params = json.load(c)["params"]
 app.config['UPLOAD_FOLDER'] = params['upload_location2']
 @app.route("/")
