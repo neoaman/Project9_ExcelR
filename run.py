@@ -1,21 +1,21 @@
 # Importing the required Packages
 from flask import Flask, render_template, request, session, redirect
-
-import pandas as pd
-import eda
+from flask_sqlalchemy import SQLAlchemy
 import os
-from werkzeug.utils import secure_filename
 import json
+from flask_mail import Mail
+import pandas as pd
+from werkzeug.utils import secure_filename
+import time
+import eda
 
-df = pd.read_csv('/home/neoml/Project9_ExcelR/static/data/df_Clean.csv')
+df = pd.read_csv('/home\\neoml\\Project9_ExcelR\\static\\data\\df_Clean.csv')
 
 app = Flask(__name__)
 
 with open("config.json") as c:
     params = json.load(c)["params"]
 app.config['UPLOAD_FOLDER'] = params['upload_location2']
-
-
 @app.route("/")
 def home():
     return render_template('index.html')
@@ -44,17 +44,20 @@ def eda():
 
     else:
         A = df.head()
-        msg = 'Showing the top 5 records of the data set'
+        msg = f'Showing the top 5 records of the data set'
     return render_template('eda.html',col = df.columns[1:],data = A,len=len(A),msg=msg)
 
 @app.route("/model")
 def model():
     return render_template('model.html')
 
+
 @app.route("/uploader", methods = ["GET","POST"])
 def uploader():
     if (request.method == "POST"):
         f = request.files['file1']
         f.save(os.path.join(app.config['UPLOAD_FOLDER'],secure_filename("train.csv")))
-        return 'upload Successfull'
+        return 'uploader Successfull'
+
+
 
