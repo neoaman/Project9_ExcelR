@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div style="background-image: url('{{ url_for( 'static', filename='img/edabg5.jpg')}}');">
+<h1 class="text-center">EDA</h1>
+<div class="container">
+
+    <div class="alert alert-success" role="alert">
+  <h1 >Univeriate and Biveriate Analysis</h1>
+</div>
+
+<div class = 'container'>
+<form class="form-inline text-center" action="/eda"  method="post">
+  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Product</label>
+  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="column_name1">
+    <option selected>TV_&_AC</option>
+      <option value=TV>TV</option>
+      <option value=AC>AC</option>
+
+  </select>
+  <label class="my-1 mr-2" for="inlineFormCustomSelectPref2">Column Name</label>
+  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref2" name="column_name2">
+    <option selected>Variable1</option>
+    {% for i in col %}
+      <option value={{i}}>{{i}}</option>
+      {% endfor %}
+  </select>
+  <label class="my-1 mr-2" for="inlineFormCustomSelectPref3">Column Name</label>
+      <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref3" name="column_name3">
+        <option selected>Variable2</option>
+        {% for i in col %}
+          <option value={{i}}>{{i}}</option>
+          {% endfor %}
+      </select>
+  <button type="submit" class="btn btn-primary my-1">Submit</button>
+</form>
+</div>
+    <div class="alert alert-primary" role="alert">
+  <h2 class="text-center" >{{msg}}</h2>
+</div>
+
+<!-- Required Table-->
+
+
+<div style="overflow:auto;" class="container h-25 d-inline-block " >
+<table  class="table table-dark">
+    <thead>
+    <tr>
+    {% for colname in data %}
+    <th class="text-center">{{colname}}</th>
+        {% endfor %}
+    </tr>
+    </thead>
+
+    {% for i in range(0,len) %}
+    <tr>
+    {% for value in data %}
+        <td class="text-center">{{data[value][i]}}</td>
+    {% endfor %}
+    </tr>
+        {% endfor %}
+</table>
+</div>
+
+
+    <div class="alert alert-success" role="alert">
+  <h1>Fraud Cases for each variable</h1>
+</div>
+
+</div>
+  </div>
+{% endblock %}

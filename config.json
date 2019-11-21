@@ -1,0 +1,23 @@
+{
+  "params":
+  {
+    "local_server":"True",
+    "local_uri": "mysql://root:@localhost/neonature",
+    "prod_uri": "mysql://root:@localhost/neonature",
+    "fb_url": "https://www.facebook.com/aman.patel.505960",
+    "twitter_url": "https://twitter.com/amanthe001",
+    "git_url": "https://github.com/neoaman",
+    "blog_name": "Neo The Nature",
+    "tagline": "Nature Needs Equilibrium",
+    "gmail_user" : "amanthe001@gmail.com",
+    "gmail_pass" : "tkhwgsydbuymxhdx",
+    "no_of_posts" : 2,
+    "login-image" : "neo-bg.jpg",
+    "login-icon" : "login-icon.jpg",
+    "admin_user" : "aman@gmail.com",
+    "admin_pass" : "password",
+    "upload_location" : "D:\\STUDY PROCESS\\ExcelR Project\\Project9_ExcelR\\static\\data",
+    "upload_location2" : "D:\\STUDY PROCESS\\ExcelR Project\\Project9_ExcelR\\static\\data"
+  }
+
+}

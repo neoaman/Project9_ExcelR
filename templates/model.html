@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body %}
+<div style="background-image: url('{{ url_for( 'static', filename='img/edabg5.jpg')}}');">
+<h1 class="text-center">Model</h1>
+    <div class="container">
+        <h2>Upload the Data</h2>
+      <form action="/uploader" method="post" enctype="multipart/form-data">
+        <input type="file" name="file1">
+        <button type="submit"  class="btn btn-primary">Submit</button>
+      </form>
+
+    </div>
+</div>
+
+{% endblock %}

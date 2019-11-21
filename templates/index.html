@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block body %}
+<div style="background-image: url('{{ url_for( 'static', filename='img/img4.jpg')}}');">
+<div class="alert alert-info" role="alert">
+ <h1 class="text-center">ExcelR Project 9 Warrenty Claims</h1>
+</div>
+
+
+<!--Website designer-->
+
+<!--Option to Enter-->
+
+
+<div class="container " style="margin: auto;width: 70%;padding-left: 50px;padding-bottom:150px">
+
+
+<div class="row" style="padding:30px">
+
+<div class="card text-center " style="width: 30rem; padding:10px">
+  <img src="{{ url_for( 'static', filename='img/eda2.jpg')}}" class="card-img-top" alt="Exploratory Data Analysis" >
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Here You can Explore your data Only Textual Formats</p>
+    <a href="/eda" class="btn btn-primary">EDA</a>
+    <a href="https://amanneo.shinyapps.io/WarrentyClaims/" class="btn btn-primary">Shiny</a>
+  </div>
+</div>
+
+
+<div class="card text-center" style="width: 30rem;padding:10px">
+  <img src="{{ url_for( 'static', filename='img/model3.jpg')}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Here You can Evaluate Your model using the test data</p>
+    <a href="/model" class="btn btn-primary">Model</a>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+  </div>
+{% endblock %}
