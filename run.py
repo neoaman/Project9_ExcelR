@@ -9,7 +9,7 @@ from werkzeug.utils import secure_filename
 import time
 import eda
 
-df = pd.read_csv('/home\\neoml\\Project9_ExcelR\\static\\data\\df_Clean.csv')
+df = pd.read_csv('/home/neoml/Project9_ExcelR/static/data/df_Clean.csv')
 
 app = Flask(__name__)
 
