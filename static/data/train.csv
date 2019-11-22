@@ -1,132 +1,170 @@
-Info at 0:30, Sep 28:
-Finding you the right agent… You’re now #3 in line. Your estimated wait is: 2 minutes and 45 seconds.
-Info at 0:31, Sep 28:
-You're chatting with Sangeeth.
-Sangeeth at 0:31, Sep 28:
-Thank you for contacting sales and support, My name is Sangeeth Teegala. How may i help you for the day.
-You at 0:31, Sep 28:
-Hello Sangeeth
-Sangeeth at 0:31, Sep 28:
-Hi
-You at 0:31, Sep 28:
-my customer id is 180340459
-Sangeeth at 0:32, Sep 28:
-Thank You
-Sangeeth at 0:32, Sep 28:
-May I know your support pin please.
-Sangeeth at 0:32, Sep 28:
-Sangeeth has sent you a Secure Form: EN-US PIN
-You at 0:32, Sep 28:
-I want refund for my today purchase
-Sangeeth at 0:33, Sep 28:
-May I know on which product you want refund.
-You at 0:33, Sep 28:
-I purchased stater hosting
-You at 0:33, Sep 28:
-i want refund for thst
-Sangeeth at 0:34, Sep 28:
-May I know the reason for the refund?
-You at 0:34, Sep 28:
-because I am unable to host my website properly, I am not comfortable with CPanel
-Sangeeth at 0:34, Sep 28:
-Okay
-Sangeeth at 0:34, Sep 28:
-Let me check.
-Sangeeth at 0:35, Sep 28:
-May I know your customer ID and Support pin please ?
-Sangeeth at 0:35, Sep 28:
-Sangeeth has sent you a Secure Form: EN-US PIN
-You at 0:35, Sep 28:
-support pin is 2624 and Id is 180340459
-Sangeeth at 0:36, Sep 28:
-Thank you for validating your account.
-Sangeeth at 0:37, Sep 28:
-Let me help you with refund.
-Sangeeth at 0:37, Sep 28:
-Do you want refund to In-Store Credit or same payment method ?
-You at 0:37, Sep 28:
-same payment method
-Sangeeth at 0:37, Sep 28:
-Okay
-Sangeeth at 0:38, Sep 28:
-It will take 5 to 7 business days to get refund to same payment method.
-You at 0:38, Sep 28:
-can I know my status
-Sangeeth at 0:38, Sep 28:
-It will take 5 to 7 business days to get refund to same payment method.
-Sangeeth at 0:38, Sep 28:
-Is it Okay for you?
-You at 0:39, Sep 28:
-yes, thanks for support. will I get a conformation mail
-Sangeeth at 0:40, Sep 28:
-Yes, please delete the product from GoDaddy account.
-You at 0:40, Sep 28:
-ok
-You at 0:41, Sep 28:
-can I know the procedure to delete
-Sangeeth at 0:41, Sep 28:
-So that we can raise the refund and help you with refund order.
-You at 0:42, Sep 28:
-I have reset it
-Sangeeth at 0:42, Sep 28:
-https://account.godaddy.com/subscriptions
-Sangeeth at 0:42, Sep 28:
-Please click on the above link.
-You at 0:43, Sep 28:
-ok then
-Sangeeth at 0:43, Sep 28:
-Please select the product and click on cancel renewal.
-Sangeeth at 0:43, Sep 28:
-You will get delete option.
-Sangeeth at 0:43, Sep 28:
-Click on it and confirm it from registered email id.
-Sangeeth at 0:44, Sep 28:
-So, that we can raise the refund.
-You at 0:45, Sep 28:
-ok check, I have deleted it
-Sangeeth at 0:45, Sep 28:
-Let me check.
-You at 0:45, Sep 28:
-and let me know my status via email
-Sangeeth at 0:45, Sep 28:
-Please stay connected.
-You at 0:46, Sep 28:
-ok
-Sangeeth at 0:46, Sep 28:
-I will help you with refund number.
-You at 0:47, Sep 28:
-ok
-Sangeeth at 0:47, Sep 28:
-Okay
-Sangeeth at 0:48, Sep 28:
-We have raised the refund, you will get refund confirmation email with in 20 minutes.
-You at 0:48, Sep 28:
-Will I get the refund number inside my mail.
-Sangeeth at 0:49, Sep 28:
-Yes, you can also check it in orders history.
-Sangeeth at 0:49, Sep 28:
-https://account.godaddy.com/products
-Sangeeth at 0:49, Sep 28:
-Please click on the above link.
-You at 0:49, Sep 28:
-ok then
-Sangeeth at 0:49, Sep 28:
-In top left account settings you can see the orders history option.
-Sangeeth at 0:49, Sep 28:
-Please check.
-Sangeeth at 0:50, Sep 28:
-Please check after 20 minutes.
-You at 0:50, Sep 28:
-ok
-Sangeeth at 0:50, Sep 28:
-Is there anything else, where I could assist you with?
-You at 0:50, Sep 28:
-No, Thanks for Your Assistance
-Sangeeth at 0:51, Sep 28:
-Please click the Close button at top right to answer a few questions about your experience with us today. On a scale of 0 to 10 where 0 being the least and 10 being the highest. We value your feedback.
-Sangeeth at 0:51, Sep 28:
-Thank you for contacting us, it was wonderful chatting with you. Have a pleasant day.
-You at 0:51, Sep 28:
-you too
-Sangeeth at 0:52, Sep 28:
-Please close the chat window in-order to give your valuable survey.
+[Gameplay/EntityPool]
+SpawnedLimit=100
+[Hidden]
+HasSeenGotyWelcomeMessage=true
+HasSetup=true
+uiVerticalFrameScale=0.9975
+uiHorizontalFrameScale=1
+[Localization]
+RequestedSpeechLanguage=EN
+SpeechLanguage=RU
+RequestedTextLanguage=EN
+TextLanguage=EN
+[Viewport]
+VSync=true
+Resolution="1600x900"
+FullScreenMode=1
+VSyncThreshold=0
+OutputMonitor=0
+[Hud]
+HudSize=0
+[Budget]
+TerrainTileMipDataBudget=100
+TerrainTileMinTimeout=2
+TerrainTileTimeout=10
+OcclusionQueryAdditionalMemory=5
+TerrainTileLoadingTimeout=5
+[ContentManager/Mods]
+MaxNameLength=64
+Enabled=true
+[Audio]
+Subtitles=true
+[LoadingScreen/TCR]
+ShowProgress=true
+[Game]
+DoNotPauseWhileStopped=false
+[Scripts]
+DebugScriptsForceFlush=true
+DebugScriptsLogDir=
+[PostProcess]
+SharpenAmount=1
+MotionBlurPositionTreshold=0.05
+MotionBlurRotationTreshold=1
+SSAOSolution=1
+[Input]
+PadVibrationEnabled=true
+KeyboardCooldownSpeed=0.1
+InvertCameraXOnMouse=false
+InvertCameraYOnMouse=false
+CameraAutoRotX=true
+InvertCameraX=false
+UIMouseSensitivity=1
+CameraAutoRotY=true
+RightStickCameraSensitivity=1
+InvertCameraY=false
+RightStickAimSensitivity=1
+MouseSensitivity=1
+SteamController=0
+ForceDisablePad=false
+[DLC]
+DlcEnabled_dlc_010_001=1
+DlcEnabled_dlc_015_001=1
+DlcEnabled_dlc_005_001=1
+DlcEnabled_dlc_007_001=1
+DlcEnabled_dlc_013_001=1
+DlcEnabled_dlc_004_001=0
+DlcEnabled_dlc_006_001=0
+DlcEnabled_dlc_001_001=1
+DlcEnabled_dlc_008_001=0
+DlcEnabled_dlc_011_001=1
+DlcEnabled_dlc_002_001=1
+DlcEnabled_ep1=1
+DlcEnabled_dlc_014_001=1
+DlcEnabled_dlc_009_001=1
+DlcEnabled_bob_000_000=1
+DlcEnabled_abob_001_001=1
+DlcEnabled_dlc_012_001=1
+DlcEnabled_dlc_003_001=1
+DlcEnabled_dlc_016_001=1
+DlcEnabled_dlc_011_002=0
+[Gameplay]
+Difficulty=1
+EnableUberMovement=1
+[LevelOfDetail]
+SwarmHideDistance=200
+DecalsHideDistance=30
+DimmerHideDistance=60
+DynamicDecalsHideDistance=20
+StripeHideDistance=60
+[General]
+ConfigVersion=2
+[LoadingScreen/Editor]
+Disabled=false
+[LoadingOverlay/TCR]
+FadeOutCooldownExtraTime=1
+FadeInSpinnerTime=1
+NoninteractiveSpinnerTime=3
+FadeOutSpinnerTime=1
+NoninteractiveEndCooldown=1
+[Visuals]
+AllowClothSimulationOnGpu=false
+InventoryBgColorScaleB=0.036
+InventoryFixedLuminance=0.25
+InventoryBgColorScaleG=0.034
+MovieFramerate=30
+GammaValue=1
+InventoryBgColorScaleR=0.02
+[Rendering]
+GrassDensity=1600
+DecalsSpawnDistanceCutoff=10
+GlobalOceanTesselationFactor=16
+HairWorksGlobalWidthLimit=2.25
+CascadeShadowDistanceScale2=1
+MaxTextureAnizotropy=4
+HairWorksGlobalStrandSmoothness=2
+HairWorksGlobalDensityQuality=0.75
+UseDynamicWaterSimulation=false
+TextureMemoryBudget=300
+CascadeShadowDistanceScale3=1
+HairWorkstGlobalDensityLimit=0.35
+TextureStreamingHeadsDistanceLimitSq=100
+MeshLODDistanceScale=1
+ScaleformTextureUnstreamDelay=2.5
+DecalsChance=1
+TerrainReadAheadDistance=200
+AtlasTextureDownscale=1
+HairWorksLevel=1
+TerrainScreenSpaceErrorThreshold=3
+TerrainScreenSpaceErrorThresholdFar=7
+TextureStreamingCharacterDistanceLimitSq=225
+TextureStreamingDistanceLimitSq=40000
+HairWorksGlobalDetailLODFactor=0.65
+DetailTextureDownscale=1
+TextureDownscale=1
+TextureInFlightBudget=128
+TextureInFlightCountBudget=12
+PreserveSystemGamma=false
+TerrainErrorMetricMultiplier=20
+CascadeShadowDistanceScale0=1
+MeshRenderingDistanceScale=1
+HairWorksAALevel=2
+CascadeShadowDistanceScale1=1
+[Input/Gestures]
+EnableSwipe=true
+EnablePan=true
+EnableGestures=true
+EnablePinch=true
+[LoadingScreen]
+FadeInTime=3
+SkipShowWithAnyKey=true
+GameRevealTime=3
+SkipHideDelay=3
+SkipInputDelay=0.25
+FadeOutTime=1.5
+SkipAutoshow=false
+[Engine]
+LimitFPS=30
+[Rendering/SpeedTree]
+GrassGenerationEfficiency=0.075
+GrassDistanceScale=0.8
+FoliageDistanceScale=1
+FoliageShadowDistanceScale=12
+GrassRingSize=4194304
+[Gameplay/BoatCamera]
+BoatLocalSpaceCamera=false
+[Save]
+ShowCompatWarning=false
+[Kinect]
+Kinect=true
+[Foliage]
+MaxVisibilityDepth=8
