@@ -11,7 +11,7 @@ df = pd.read_csv('/home/neoml/Project9_ExcelR/static/data/df_Clean.csv')
 
 app = Flask(__name__)
 
-with open("config.json") as c:
+with open("/home/neoml/Project9_ExcelR/config.json") as c:
     params = json.load(c)["params"]
 app.config['UPLOAD_FOLDER'] = params['upload_location2']
 

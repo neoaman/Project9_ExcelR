@@ -1,0 +1,12 @@
+,Region,State,Area,City,Consumer_profile,Product_category,Product_type,AC_1001_Issue,AC_1002_Issue,AC_1003_Issue,TV_2001_Issue,TV_2002_Issue,TV_2003_Issue,Claim_Value,Service_Centre,Product_Age,Purchased_from,Call_details,Purpose
+0,South,Karnataka,Urban,Bangalore,Business,Entertainment,TV,0,0,0,1,2,0,15000,10,60,Manufacturer,0.5,Complaint
+1,South,Karnataka,Rural,Bangalore,Business,Household,AC,1,1,0,0,0,0,20000,12,10,Dealer,1,Complaint
+2,North,Haryana,Urban,Chandigarh,Personal,Household,AC,0,1,2,0,0,0,18000,14,10,Dealer,1.4,Claim
+3,South,Tamil Nadu,Urban,Chennai,Business,Entertainment,TV,0,0,0,1,1,0,12000,16,20,Manufacturer,2,Complaint
+4,North East,Jharkhand,Rural,Ranchi,Personal,Entertainment,TV,0,0,0,0,1,2,25000,15,6,Dealer,1.3,Claim
+5,North West,Kerala,Urban,Kochi,Personal,Entertainment,TV,0,0,0,2,1,0,12000,14,3,Internet,1.4,Complaint
+6,South East,Tamil Nadu,Urban,Chennai,Business,Entertainment,TV,0,0,0,1,1,1,15000,12,4,Manufacturer,1.6,Complaint
+7,South West,Andhra Pradesh,Urban,Hyderabad,Business,Entertainment,TV,0,0,0,1,1,1,10000,13,5,Dealer,2.6,Claim
+8,South,Karnataka,Urban,Bangalore,Business,Household,AC,0,0,1,0,0,0,50000,10,18,Manufacturer,2.4,Claim
+9,West,Karnataka,Rural,Bangalore,Business,Entertainment,TV,0,0,0,1,1,1,20000,12,7,Manufacturer,6.5,Claim
+10,East,Bihar,Rural,Patna,Personal,Household,AC,0,0,2,0,0,0,25000,13,4,Dealer,0.5,Complaint

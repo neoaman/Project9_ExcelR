@@ -1,20 +1,22 @@
 # Importing the required Packages
-from flask import Flask, render_template, request, session, redirect
-#from flask_sqlalchemy import SQLAlchemy
+from flask import Flask, render_template, request, session, redirect,send_file
+from flask_sqlalchemy import SQLAlchemy
 import os
 import json
-#from flask_mail import Mail
+from flask_mail import Mail
 import pandas as pd
 from werkzeug.utils import secure_filename
 import time
 import eda
 
-df = pd.read_csv('/home/neoml/Project9_ExcelR/static/data/df_Clean.csv')
+
 
 app = Flask(__name__)
 
 with open("/home/neoml/Project9_ExcelR/config.json") as c:
     params = json.load(c)["params"]
+
+df = pd.read_csv(params['upload_location2']+'df_Clean.csv')
 app.config['UPLOAD_FOLDER'] = params['upload_location2']
 @app.route("/")
 def home():
@@ -44,20 +46,55 @@ def eda():
 
     else:
         A = df.head()
-        msg = 'Showing the top 5 records of the data set'
+        msg = f'Showing the top 5 records of the data set'
     return render_template('eda.html',col = df.columns[1:],data = A,len=len(A),msg=msg)
 
 @app.route("/model")
 def model():
-    return render_template('model.html')
+    available_data = os.listdir(params["upload_location2"])
+    answer = pd.DataFrame()
+    return render_template('model.html', out=answer, avil=available_data, len=len(answer))
 
 
 @app.route("/uploader", methods = ["GET","POST"])
 def uploader():
+    available_data = os.listdir(params["upload_location2"])
     if (request.method == "POST"):
         f = request.files['file1']
         f.save(os.path.join(app.config['UPLOAD_FOLDER'],secure_filename("train.csv")))
-        return 'uploader Successfull'
+        m = "Your data is uploaded as name train.csv"
+    else:
+        m = "Kindly Upload Your Evaluation data"
+    answer = pd.DataFrame()
+    return render_template('model.html',out = answer,avil = available_data,len=len(answer),msg = m,messg = "")
 
 
+@app.route("/model_Eval",methods = ['GET','POST'])
+def answer():
+    if (request.method == 'POST'):
+        available_data = os.listdir(params["upload_location2"])
+        train = pd.read_csv(params["upload_location2"]+request.form.get('train_data'))
+        test = pd.read_csv(params["upload_location2"]+request.form.get('test_data'))
+        if ('Fraud' not in test.columns):
+            models = request.form.get('modelselection')
+            import model
+            global answer
+            m,answer = model.ModelSelection(train,models,test)
+        elif 'Fraud' not in train.columns:
+            answer = pd.DataFrame()
+            m = "Train Data must contain Fraud column/Variable"
+        elif 'Fraud' in test.columns:
+            answer = pd.DataFrame()
+            m = "Evaluation Set Should not contain Fraud column/Variable"
+        else:
+            m= "check whether your test data contains the following columns or not  :/n'Region', 'State', 'Area', 'City', 'Consumer_profile', 'Product_category', 'Product_type', 'AC_1001_Issue','AC_1002_Issue', 'AC_1003_Issue', 'TV_2001_Issue', 'TV_2002_Issue', 'TV_2003_Issue', 'Claim_Value','Service_Centre', 'Product_Age', 'Purchased_from', 'Call_details', 'Purpose'"
+    else:
+        answer = pd.DataFrame()
+        m=""
+    return render_template('model.html',out = answer,avil = available_data,len=len(answer),msg="",messg = m)
 
+@app.route("/download",methods = ['GET','POST'])
+def download():
+    return send_file(params["upload_location2"]+"Prediction.xlsx")
+
+app.run(debug = True)

@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 
-#df = pd.read_csv('D:\\STUDY PROCESS\\ExcelR Project\\Project9_ExcelR\\static\\df_Clean.csv')
+#df = pd.read_csv('D:\\STUDY PROCESS\\ExcelR Project\\Project9_ExcelR\\static\\data\\df_Clean.csv')
 #print(df.head())
 
 def Data_Description(df):
