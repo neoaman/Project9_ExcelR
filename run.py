@@ -3,7 +3,6 @@ from flask import Flask, render_template, request, session, redirect,send_file
 from flask_sqlalchemy import SQLAlchemy
 import os
 import json
-from flask_mail import Mail
 import pandas as pd
 from werkzeug.utils import secure_filename
 import time
