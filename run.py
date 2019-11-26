@@ -46,7 +46,7 @@ def eda():
 
     else:
         A = df.head()
-        msg = f'Showing the top 5 records of the data set'
+        msg = 'Showing the top 5 records of the data set'
     return render_template('eda.html',col = df.columns[1:],data = A,len=len(A),msg=msg)
 
 @app.route("/model")
@@ -61,8 +61,8 @@ def uploader():
     available_data = os.listdir(params["upload_location2"])
     if (request.method == "POST"):
         f = request.files['file1']
-        f.save(os.path.join(app.config['UPLOAD_FOLDER'],secure_filename("train.csv")))
-        m = "Your data is uploaded as name train.csv"
+        f.save(os.path.join(app.config['UPLOAD_FOLDER'],secure_filename("Test.csv")))
+        m = "Your data is uploaded as name Test.csv"
     else:
         m = "Kindly Upload Your Evaluation data"
     answer = pd.DataFrame()
@@ -97,4 +97,3 @@ def answer():
 def download():
     return send_file(params["upload_location2"]+"Prediction.xlsx")
 
-app.run(debug = True)

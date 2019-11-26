@@ -61,8 +61,8 @@ def uploader():
     available_data = os.listdir(params["upload_location"])
     if (request.method == "POST"):
         f = request.files['file1']
-        f.save(os.path.join(app.config['UPLOAD_FOLDER'],secure_filename("train.csv")))
-        m = "Your data is uploaded as name train.csv"
+        f.save(os.path.join(app.config['UPLOAD_FOLDER'],secure_filename("Test.csv")))
+        m = "Your data is uploaded as name Test.csv"
     else:
         m = "Kindly Upload Your Evaluation data"
     answer = pd.DataFrame()
