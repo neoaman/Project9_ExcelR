@@ -78,7 +78,8 @@ def answer():
             models = request.form.get('modelselection')
             import model
             global answer
-            m,answer = model.ModelSelection(train,models,test)
+            m,answer,_ = model.ModelSelection(train,models,test)
+            _.to_excel(params["upload_location2"] + "Prediction.xlsx")
         elif 'Fraud' not in train.columns:
             answer = pd.DataFrame()
             m = "Train Data must contain Fraud column/Variable"
