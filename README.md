@@ -1,6 +1,6 @@
 <hr>
 
-<img href="https://images.jdmagicbox.com/comp/bangalore/l5/080pxx80.xx80.180306220352.b1l5/catalogue/excelr-solutions-btm-layout-1st-stage-bangalore-digital-marketing-training-institutes-mg2k8.jpg">
+<img src="https://biz.prlog.org/excelrsolutionshyd/logo.png" width="400" height="200">
 
 # Project9_ExcelR - The Warrenty Claim Project
 During my Training period at ExcelR Solutions.
