@@ -16,4 +16,4 @@ Python 3.6.5, Flask (deployment), Heroku (hosting).
 ##	Brief description about the project: 
 In this project I worked on the data of a Electronics company who sells TV and AC all over India. Using the tree-based models mentioned above I come up with more than 0.96 accuracy, so I considered them for my Model deployment, where I used the Flask module. And for showcasing my model I hosted my models using Heroku. 
 
-<a href="https://excelrproject9.herokuapp.com/">ExcelrProject9-link</a>
+<a href="https://excelr.herokuapp.com/">ExcelrProject9-link</a>
